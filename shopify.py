@@ -17,16 +17,17 @@ class Bot(object):
         total_items = len(items)
         for i in range(len(items)):
             for item in items[i]:
-                name = items[i]["image:image"]
-                if self.keywords in name:
-                    url = items[i]["loc"]
+                self.name = items[i]["image:image"]
+                if self.keywords in self.name:
+                    self.url = items[i]["loc"]
                     break
                 else:
                     pass
                     
         self.end_time = time.time()
         self.time_taken = self.end_time - self.start_time
-        print "Searched {} products in {} seconds".format(total_items, self.time_taken)
+        print "[ALERT] Found {}::URL {}".format(self.name, self.url)
+        print "[INFO] Searched {} products in {} seconds".format(total_items, self.time_taken)
 
 Scrape = Bot()
 Scrape.find("", "")
