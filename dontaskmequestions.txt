@@ -1,0 +1,3 @@
+import shopify into your script, the find() function accepts 2 arguments, shopify product sitemap url, and product keywords 
+*BE SPECIFIC* there will be more functions whenever i have time. o yeah i forgot, there is a keyerror on line 20, fix it for 
+a cookie <3 have fun.
